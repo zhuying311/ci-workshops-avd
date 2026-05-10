@@ -3,12 +3,6 @@ aaa_authorization:
     default: local
 aaa_root:
   disabled: true
-banners:
-  motd: 'You shall not pass. Unless you are authorized. Then you shall pass.
-
-    EOF
-
-    '
 config_end: true
 daemon_terminattr:
   cvaddrs:
@@ -117,18 +111,7 @@ local_users:
 - name: arista
   privilege: 15
   role: network-admin
-  sha512_password: $6$arista$TiNHsyxZ9JwZ38dslbzzyN.5VzFiNs3ZwTO0q6UDZxuy.n2n54mtWWuRPnJwkBq8yXRG1v0EOTIN9odfMH7pU.
-  ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuNnWp5cP5JwlmYfua9WfNJ/GfvrGlYc0sXDSpcggE8KUcp2+Cd/VhLzJDFkRZZqZlPeeZW4jHA9JTHHXEB8nmHuBkEl0SKmU9Dbdm0+eHCMCH4IFa4lj7eWbPyCtXxHCrW4Gn7IoTjcYJHoPKd18UKIFJP3y+1zEM9JYekhL2rHAt2TvJF3gJUDW9Q8pbljOm81+mHNqznUp3xiztX8YJJgXqKwR4ZOT1zCyLG6kDoGqzJyOpyLdEmkkKqb4zF4VJk3682NcOLl6FJR1rS5wJYhXRwr62mpzKANxi1RbGqjfBR2ZiVL0GoQRBTeNCxONu3aUmriEzp08pRIMDFJLv
-    arista@toronto-day3-46-f66713f6-eos
-logging:
-  vrfs:
-  - name: default
-    source_interface: Management0
-    hosts:
-    - name: 10.200.0.108
-      protocol: udp
-    - name: 10.200.1.108
-      protocol: udp
+  sha512_password: $6$arista$jYtBwHiMd/7nsqnxDkh8r6rt4OT4NkHAJJ7iBDE4byHFv2RNQEQIS8RxCnvtUYyed3H57THt0wDE6HbcHrD3A.
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
